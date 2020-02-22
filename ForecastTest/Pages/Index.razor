@@ -1,0 +1,8 @@
+﻿@page "/"
+
+<h1>Forecast test</h1>
+
+<AuthorizeView>
+    <NotAuthorized>Hello, <b>Anonymous</b>! <a href="signin">Sign in</a></NotAuthorized>
+    <Authorized>Hello, <b>@context.User.Identity.Name</b>!</Authorized>
+</AuthorizeView>
